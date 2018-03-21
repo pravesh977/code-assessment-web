@@ -1,0 +1,51 @@
+.productDiv {
+    background: orange;
+}
+
+/* ********************* MOBILE STYLINGS BEGIN**************** */
+@media only screen and (min-width : 320px) {
+    body {
+        background: purple;
+    }
+}
+
+
+
+
+
+
+/* ********************* MOBILE STYLINGS END**************** */
+
+
+/* ********************* Tablet STYLINGS BEGIN**************** */
+@media only screen and (min-width : 768px) {
+    body {
+        background: green;
+    }
+}
+
+
+
+
+
+/* ********************* Tablet STYLINGS END**************** */
+
+
+
+
+
+
+/* ********************* Desktop STYLINGS BEGIN**************** */
+@media only screen and (min-width : 992px) {
+    body {
+        background: cyan;
+    }
+    .headersdiv {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+/* ********************* Desktop STYLINGS END**************** */
