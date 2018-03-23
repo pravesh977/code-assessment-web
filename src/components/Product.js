@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Product = ({ price, inventory, title }) => (
-  <div>
-    {title} - &#36;{price}{inventory ? ` x ${inventory}` : null}
+const Product = ({ price, inventory, title, imagelink }) => (
+  <div className="mainProductDiv">
+     <img src={imagelink} alt={title}/>
+     <p className="producttitle">{title}</p> 
+     <p className="productprice">&#36;{price}</p>{inventory ? <p className="productavailability"> Available:  {inventory}</p> : null }
   </div>
 )
 
