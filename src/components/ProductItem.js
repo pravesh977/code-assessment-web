@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Product from './Product'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
-  <div style={{ borderBottom: 2, borderBottomColor: 'grey', borderBottomStyle: 'solid' }}>
+  <div style={{ }}>
     <Product
       title={product.title}
       price={product.price}

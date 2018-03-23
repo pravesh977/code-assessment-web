@@ -32,7 +32,7 @@ import './Styles.css';
       return (
         <div>
           <div className="headersdiv">
-            <h2>ACME STORE</h2>
+            <h2>STORE</h2>
             <div className="cartDiv">
               <span onClick={this.onCartClick}><i className="fas fa-shopping-cart"></i></span>
               <div style={{ display: this.state.itemsDisplay }}>

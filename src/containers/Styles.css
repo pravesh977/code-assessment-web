@@ -11,7 +11,7 @@
     .headersdiv h2 {
         text-align: center;
         font-weight: bold;
-        font-size: 3em;
+        font-size: 2em;
         line-height: 0px;
     }
     /* .headersdiv h2:nth-child(2) {
@@ -20,6 +20,7 @@
     } */
     .cartDiv {
         text-align: right;
+        padding: 5%;
     }
     .cartDiv span svg {
         right: 5%;
@@ -32,10 +33,12 @@
         background: grey;
         }
     .cartDiv div div div {
-        background: red;
     }
     .cartDiv div div div .mainProductDiv {
         text-align: right;
+    }
+    .cartDiv div div div .mainProductDiv p {
+        font-size: 1em;
     }
     .headersdiv div h2:hover {
         cursor: pointer;
@@ -46,6 +49,7 @@
         align-items: center;
         text-align: center;
         width: 100%;
+        background: red;
     }
     .mainProductDiv img {
         width: 100%;
@@ -71,13 +75,25 @@
         font-size: 1.2em;
     }
     .productListDiv div {
-        background-color: #CDE6F0;
 
     }
     .productListDiv div div {
         margin-bottom: 20px; 
         text-align: 'center';
-        padding: 1%;
+        background-color: #CDE6F0;
+        padding-bottom: 5%;
+
+    }
+
+    .productListDiv div div button {
+        background: orange;
+        padding: 1.2em;
+        border-radius: 50px;
+        bottom: 20%;
+    }
+    .productavailability {
+        line-height: 1px;
+        margin-bottom: -1%;
     }
 
 }
