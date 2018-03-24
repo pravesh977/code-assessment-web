@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Product from './Product'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
-  <div style={{ }}>
+  <div className="divwithbutton">
     <Product
       title={product.title}
       price={product.price}
@@ -17,6 +17,8 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
       disabled={product.inventory > 0 ? '' : 'disabled'}>
       {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
     </button>
+    <div style={{clear: 'both'}}></div>
+
   </div>
 )
 
