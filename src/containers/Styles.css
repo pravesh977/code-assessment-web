@@ -1,155 +1,208 @@
+
 /* ********************* MOBILE STYLINGS BEGIN**************** */
 /* @media only screen and (max-width: 767px) { */
-  body {
-    font-size: 24px;
-    box-sizing: border-box;
-  }
-  .headersdiv {
-    /* text-align: right; */
-  }
-  .headersdiv h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2em;
-    line-height: 0px;
-  }
-  /* .headersdiv h2:nth-child(2) {
-        position: relative;
-        right: 5%;
-    } */
-  .cartDiv {
-    text-align: right;
-    padding: 5%;
-  }
-  .cartDiv span svg {
-    right: 5%;
-    position: relative;
-    font-size: 3em;
-  }
-  .cartDiv div div {
-    background: grey;
-  }
-  .cartDiv div div button {
-    background: yellow;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 1.2em;
-    color: green;
-  }
-  .headersdiv > div > div > div > p {
-    font-style: italic;
-    font-weight: bolder;
-    border-top: 2px dotted black;
-    border-bottom: 2px dotted black;
-  }
-
-  .cartDiv div div div .mainProductDiv {
-    text-align: right;
-  }
-  .cartDiv div div div .mainProductDiv p {
-    font-size: 1em;
-  }
-  .cartDiv div div div .mainProductDiv img {
-    width: 50%;
-    height: auto;
-  }
-  .headersdiv div h2:hover {
-    cursor: pointer;
-  }
-  .mainProductDiv {
-    margin: 0 auto;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-  }
-  .mainProductDiv img {
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-  .productListDiv h3 {
-    text-align: center;
-    font-size: 2em;
-  }
-  .cartaddbutton {
-    color: blue;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-  }
-  .mainProductDiv div p:nth-child(1) {
-    font-size: 1.5em;
-    font-weight: bolder;
-    font-style: italic;
-  }
-  .mainProductDiv div p:nth-child(2) {
-    font-size: 1.2em;
-  }
-  .productListDiv div {
-  }
-  .productListDiv div div {
-    margin-bottom: 20px;
-    text-align: "center";
-    background-color: #cde6f0;
-  }
-
-  .productListDiv div div button {
-    background: orange;
-    border-radius: 50px;
-    bottom: 20%;
-    font-weight: bolder;
-    font-size: 1em;
-  }
-  .productavailability {
-    line-height: 1px;
-    margin-bottom: -1%;
-  }
-  .productprice {
-    margin-bottom: -1%;
-  }
-/* } */
-
-
-/* ********************* MOBILE STYLINGS END**************** */
-
-/* ********************* Tablet STYLINGS BEGIN**************** */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    padding: 0px;
-    margin: 0px;
-  }
-  .mainProductDiv {
-
-  }
-  .productavailability {
-      float: left;
-      margin-left: 10%;
-  }
-  
-  .mainProductDiv div {
-      display: flex;
-       justify-content: space-around;
+    body {
+        font-size: 24px;
+        box-sizing: border-box;
+        background: rgb(240,240,240);
       }
-  .mainProductDiv img {
-      width: 40%;
-      float: left;
-  }
-  .productListDiv div div {
-      background: pink;
-      margin-top: 50px;
-  }
-  .productListDiv div div button {
-
-  }
-  .cartDiv div div div .mainProductDiv img {
-    width: 30%;
-    height: auto;
-    float: none;
-  }
- 
-}
-
+      .headersdiv {
+        /* text-align: right; */
+      }
+      .headersdiv h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 0px;
+      }
+      /* .headersdiv h2:nth-child(2) {
+            position: relative;
+            right: 5%;
+        } */
+      .cartDiv {
+        text-align: right;
+        padding: 5%;
+      }
+      .cartDiv span svg {
+        right: 5%;
+        position: relative;
+        font-size: 3em;
+      }
+      .cartDiv span svg:active {
+        cursor: pointer;
+        color: rgb(68, 212, 68);
+        transform: scale(1.2, 1.2);
+    }
+      .cartDiv div div {
+        background: white;
+      }
+      .cartDiv div div button {
+        background: #FFC33D;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 1.2em;
+        color: white;
+      }
+      .cartDiv div div button:active {
+          font-size: 1.3em;
+          background: #2AED64;
+      }
+      .headersdiv > div > div > div > p {
+        font-style: italic;
+        font-weight: bolder;
+        border-top: 2px dotted black;
+        border-bottom: 2px dotted black;
+      }
+    
+      .cartDiv div div div .mainProductDiv {
+        text-align: right;
+        margin-bottom: 5%;
+      }
+      .cartDiv div div div .mainProductDiv p {
+        font-size: 1em;
+      }
+      .cartDiv div div div .mainProductDiv p:nth-child(2) {
+        text-decoration: underline;
+      }
+      .cartDiv div div div .mainProductDiv img {
+        width: 50%;
+        height: auto;
+      }
+      .headersdiv div h2:hover {
+        cursor: pointer;
+      }
+      .mainProductDiv {
+        margin: 0 auto;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+      .mainProductDiv img {
+        width: 100%;
+        height: auto;
+        text-align: center;
+      }
+      .productListDiv h3 {
+        text-align: center;
+        font-size: 2em;
+      }
+      .cartaddbutton {
+        color: white;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+      .mainProductDiv div p:nth-child(1) {
+        font-size: 1.5em;
+        font-weight: bolder;
+        font-style: italic;
+      }
+      .mainProductDiv div p:nth-child(2) {
+        font-size: 1.2em;
+      }
+      .productListDiv div {
+      }
+      .productListDiv div div {
+        margin-bottom: 20px;
+        text-align: "center";
+        background-color: #cde6f0;
+      }
+    
+      .productListDiv div div button {
+        background: #2AED64;
+        border-radius: 50px;
+        bottom: 20%;
+        font-weight: bolder;
+        font-size: 1em;
+      }
+      .productListDiv div div button:hover {
+          cursor: pointer;
+      }
+      .productListDiv div div button:active {
+          background: #FFC33D;
+          font-size: 1.1em;
+      }
+      .productavailability {
+        line-height: 1px;
+        margin-bottom: -1%;
+      }
+      .productprice {
+        margin-bottom: -1%;
+      }
+    /* } */
+    
+    
+    /* ********************* MOBILE STYLINGS END**************** */
+    
+    /* ********************* Tablet STYLINGS BEGIN**************** */
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      body {
+        padding: 0px;
+        margin: 0px;
+        background: rgb(240,240,240);
+        font-size: 30px;
+      }
+      .mainProductDiv {
+    
+      }
+      .productavailability {
+          float: left;
+          margin-left: 10%;
+      }
+      
+      .mainProductDiv div {
+          display: flex;
+           justify-content: space-around;
+          }
+      .mainProductDiv img {
+          width: 40%;
+          float: left;
+      }
+      .productListDiv div div {
+          background: white;
+          margin-top: 50px;
+      }
+      .productListDiv div div button {
+    
+      }
+      .cartDiv div div div .mainProductDiv img {
+        width: 80%;
+        height: auto;
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+      .cartDiv div div div .mainProductDiv div {
+       display: block;
+      }
+      .productprice {
+    
+      }
+      .producttitle {
+    
+      }
+      .cartDiv div {
+          background: white;
+          width: 75%;
+          margin: 0 auto;
+      }
+      .cartDiv div div div .mainProductDiv {
+          margin-bottom: 30px;
+          text-align: center;
+      }
+      .cartDiv div div h3 {
+          text-align: center;
+      }
+      .headersdiv > div > div > div > p {
+          text-align: center;
+      }
+      .cartDiv div div button {
+          margin: 0 auto;
+          display: block;
+      }
+     
+    }
 /* ********************* Tablet STYLINGS END**************** */
 
 /* ********************* Desktop STYLINGS BEGIN**************** */
@@ -157,7 +210,40 @@
   body {
     background: cyan;
   }
+  .productListDiv div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 
+  }
+  .productListDiv div div {
+      width: 45%;
+      flex-direction: column;
+      /* margin: 0.5% 0.8% 0.5% 0.8%; */
+  }
+  .productListDiv div div div {
+      width: 100%;
+  }
+
+  .productListDiv div div div img {
+      width: 100%;
+      height: auto;
+  }
+  .productListDiv div div div div {
+    display: flex; 
+    /* width: 100%; */
+}
+
+  .productListDiv div div button {
+      margin: 0px;
+
+  }
+  .cartDiv span svg:hover {
+    cursor: pointer;
+    color: green;
+    transform: scale(1.2, 1.2);
+}
 }
 
 /* ********************* Desktop STYLINGS END**************** */
