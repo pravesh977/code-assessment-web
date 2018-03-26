@@ -32,9 +32,11 @@
         cursor: pointer;
         color: rgb(68, 212, 68);
         transform: scale(1.2, 1.2);
+        transition: 0.2s linear;
     }
       .cartDiv div div {
         background: white;
+        text-align: center;
       }
       .cartDiv div div button {
         background: #FFC33D;
@@ -55,7 +57,7 @@
       }
     
       .cartDiv div div div .mainProductDiv {
-        text-align: right;
+        /* text-align: right; */
         margin-bottom: 5%;
       }
       .cartDiv div div div .mainProductDiv p {
@@ -107,6 +109,7 @@
         margin-bottom: 20px;
         text-align: "center";
         background-color: #cde6f0;
+        padding-bottom: 0.5%;
       }
     
       .productListDiv div div button {
@@ -162,9 +165,13 @@
       .productListDiv div div {
           background: white;
           margin-top: 50px;
+          padding-bottom: 0px;
       }
-      .productListDiv div div button {
-    
+ 
+      .productListDiv div div .mainProductDiv div {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
       }
       .cartDiv div div div .mainProductDiv img {
         width: 80%;
@@ -208,7 +215,7 @@
 /* ********************* Desktop STYLINGS BEGIN**************** */
 @media only screen and (min-width: 992px) {
   body {
-    background: cyan;
+    background: rgb(240,240,240);
   }
   .productListDiv div {
     display: flex;
@@ -243,7 +250,38 @@
     cursor: pointer;
     color: green;
     transform: scale(1.2, 1.2);
-}
+    }
+  .cartDiv div div div .mainProductDiv {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+  }
+  .cartDiv div div div .mainProductDiv img {
+      width:15%;
+      height: auto;
+      text-align: center;
+  }
+  .cartDiv div {
+      /* width: 80%;
+      margin: 0 auto; */
+  }
+  .cartDiv div div button:hover {
+      cursor: pointer;
+      background: #2AED64;
+      transform: scale(1.1, 1.1);
+      transition: 0.2s linear;
+  }
+  .cartDiv span svg:hover {
+    cursor: pointer;
+    color: rgb(68, 212, 68);
+    transform: scale(1.2, 1.2);
+    transition: 0.2s linear;
+    }
+    .productListDiv div div button:hover {
+        background: #FFC33D;
+        transition: 0.5s;
+    }
 }
 
 /* ********************* Desktop STYLINGS END**************** */
