@@ -1,26 +1,26 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Product from './Product'
+import React from "react";
+import PropTypes from "prop-types";
+import Product from "./Product";
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div className="divwithbutton">
     <Product
       title={product.title}
       price={product.price}
-      inventory={product.inventory} 
+      inventory={product.inventory}
       imagelink={product.imagelink}
-      />
+    />
 
     <button
       className="cartaddbutton"
       onClick={onAddToCartClicked}
-      disabled={product.inventory > 0 ? '' : 'disabled'}>
-      {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
+      disabled={product.inventory > 0 ? "" : "disabled"}
+    >
+      {product.inventory > 0 ? "Add to cart" : "Sold Out"}
     </button>
-    <div style={{clear: 'both'}}></div>
-
+    <div style={{ clear: "both" }} />
   </div>
-)
+);
 
 ProductItem.propTypes = {
   product: PropTypes.shape({
@@ -29,6 +29,6 @@ ProductItem.propTypes = {
     inventory: PropTypes.number.isRequired
   }).isRequired,
   onAddToCartClicked: PropTypes.func.isRequired
-}
+};
 
-export default ProductItem
+export default ProductItem;
