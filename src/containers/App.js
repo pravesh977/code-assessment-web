@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import ProductsContainer from './ProductsContainer';
 import CartContainer from './CartContainer';
-// import './../../node_modules/react-scripts/template/src/App.css';
 import './Styles.css';
-// const App = () => (
   class App extends Component {
     constructor() {
       super();
@@ -25,7 +23,6 @@ import './Styles.css';
         })
       }
       console.log(this.state.itemsDisplay)
-      console.log("hey hey")
     }
 
     render() {
@@ -42,16 +39,10 @@ import './Styles.css';
           </div>
         <hr/>
         <ProductsContainer />
-        {/* <button
-          onClick={this.onCartClick}>
-          PLAY THAT SHIT
-       </button> */}
-        {/* <h2>hello, <i className="fas fa-shopping-cart"></i></h2> */}
         <hr/>
         </div>
       )
     }
   }
 
-// export default App
 export default App;
