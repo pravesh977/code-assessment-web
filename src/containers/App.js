@@ -6,20 +6,20 @@ import './Styles.css';
     constructor() {
       super();
       this.state = {
-        itemsDisplay: 'none',
+        slideclass: 'oldclass',
       }
       this.onCartClick = this.onCartClick.bind(this);
     }
 
     onCartClick() {
-      if(this.state.itemsDisplay === 'none') {
+      if(this.state.slideclass === 'oldclass') {
         this.setState({
-          itemsDisplay: 'block',
+          slideclass: 'newclasscart',
         })
       }
       else {
         this.setState({
-          itemsDisplay: 'none'
+          slideclass: 'oldclass'
         })
       }
       // console.log(this.state.itemsDisplay)
@@ -32,7 +32,7 @@ import './Styles.css';
             <h2>STORE</h2>
             <div className="cartDiv">
               <span onClick={this.onCartClick}><i className="fas fa-shopping-cart"></i></span>
-              <div style={{ display: this.state.itemsDisplay }}>
+              <div className={this.state.slideclass}>
                 <CartContainer />
               </div>
             </div>

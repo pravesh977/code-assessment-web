@@ -8,6 +8,16 @@ body {
 .headersdiv {
   /* text-align: right; */
 }
+.oldclass {
+  max-height: 0vh;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.newclasscart {
+  max-height: 50vh;
+  transition: 0.5s;
+  overflow: scroll;
+}
 .headersdiv h2 {
   text-align: center;
   font-weight: bold;
