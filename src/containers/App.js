@@ -22,7 +22,7 @@ import './Styles.css';
           itemsDisplay: 'none'
         })
       }
-      console.log(this.state.itemsDisplay)
+      // console.log(this.state.itemsDisplay)
     }
 
     render() {
